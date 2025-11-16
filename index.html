@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Game Reviews</title>
+    <!--*=============================================== start link style ===============================================-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/logo-sm.png" type="image/x-icon" />
+
+    <!--*=============================================== start Meta tags for help seo ===============================================-->
+    <meta
+      name="description"
+      content="Find the best free-to-play games for PC and Browser in 2025!"
+    />
+    <meta
+      name="keywords"
+      content="Game Reviews ,games ,mmorpg, shooter, sailing, permadeath, superhero, pixel"
+    />
+
+    <!--*=============================================== start Meta tags to make effect on URL when send ===============================================-->
+    <meta property="og:image" content="./images/freetogame-card.jpg" />
+    <meta property="og:title" content="Game Reviews" />
+    <meta
+    property="og:description"
+    content="Find the best free-to-play games for PC and Browser in 2025!"
+    />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <!--*=============================================== start backgound section ===============================================-->
+    <header>
+      <div class="bg-image">
+        <div class="container-fluid">
+          <img src="./images/wraper.png" alt="banner background image" />
+        </div>
+      </div>
+    </header>
+    <!--*=============================================== end backgound section ===============================================-->
+    <!--*=============================================== start Navbar section ===============================================-->
+    <div class="my-navbar position-sticky top-0 z-3 col-md-6 col-lg-9 mx-auto">
+      <nav class="navbar navbar-expand-lg rounded-4">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex flex-wrap align-items-center gap-2"
+            href="#"
+          >
+            <img src="./images/logo-sm.png" alt="Game Reviews logo" />
+            <h1 class="text-uppercase mb-0">Game Reviews</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase active" href="#"> mmorpg </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> shooter </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> sailing </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> permadeath </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> superhero </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> pixel </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--*===============================================  End Navbar section ===============================================-->
+    <!--*=============================================== start container of games section ===============================================-->
+    <main>
+      <section class="py-5">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-md-4 g-4"
+            id="cardListContainer"
+          ></div>
+        </div>
+      </section>
+      <!--*===============================================  End container of games section ===============================================-->
+      <!--*===============================================  Start game details section ===============================================-->
+      <section id="cardDetails" class="d-none">
+        <div class="container">
+          <header class="d-flex justify-content-between align-items-center">
+            <h2 class="text-center h3 py-4">Details Game</h2>
+            <button class="btn-close btn-close-white" id="btnClose"></button>
+          </header>
+          <div class="row g-4" id="detailsContent">
+            <div class="col-md-4">
+              <img
+                src="https://www.freetogame.com/g/590/thumbnail.jpg"
+                class="w-100"
+                alt="image details"
+              />
+            </div>
+            <div class="col-md-8">
+              <h3></h3>
+              <p>Category: <span class="badge text-bg-info"> </span></p>
+              <p>Platform: <span class="badge text-bg-info"> </span></p>
+              <p>Status: <span class="badge text-bg-info"> </span></p>
+              <p class="small"></p>
+              <a class="btn btn-outline-warning" target="_blank" href="#"
+                >Show Game</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--*===============================================   End game details section ===============================================-->
+    </main>
+    
+    <!--*=============================================== Start loading spinner section ===============================================-->
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+    <!--*===============================================  End loading spinner section ===============================================-->
+    <!--*===============================================  Start JS links ===============================================-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <!--*===============================================   End JS links ===============================================-->
+  </body>
+</html>
