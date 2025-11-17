@@ -2,7 +2,7 @@
 
 import { GameByCategoryName } from "./game.js";
 
-let gameByCategoryName = new GameByCategoryName();
+const gameByCategoryName = new GameByCategoryName();
 await gameByCategoryName.getGameByCategoryName();
 
 const links = document.querySelectorAll(

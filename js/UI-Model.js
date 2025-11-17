@@ -4,7 +4,7 @@ const cardListContainerElement = document.getElementById("cardListContainer");
 
 //!============================== this class design for Create the card and set data on it ==============================!//
 export class CardData {
-  clearContainer = function () {
+ static clearContainer = function () {
     while (cardListContainerElement.firstElementChild) {
       cardListContainerElement.removeChild(
         cardListContainerElement.firstElementChild
@@ -12,7 +12,7 @@ export class CardData {
     }
   };
 
-  CreateCrad = function (imageUrl, title, description, category, platform) {
+ static CreateCrad = function (imageUrl, title, description, category, platform) {
     const columnContainer = document.createElement("div");
     columnContainer.classList = "col";
 
@@ -81,7 +81,7 @@ export class CardData {
 
 //!============================== this class design for show and hide the game details ==============================!//
 export class DetailsGame {
-  setDataInDetailsPage = function (
+  static setDataInDetailsPage = function (
     imageURL,
     title,
     category,

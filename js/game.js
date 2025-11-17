@@ -20,13 +20,11 @@ export class GameByCategoryName {
         options
       );
       const result = await response.json();
-      const cardData = new CardData();
-      cardData.clearContainer();
+      CardData.clearContainer();
       result.forEach((element) => {
         const { id, thumbnail, title, short_description, genre, platform } =
           element;
-        const cardData = new CardData();
-        const card = cardData.CreateCrad(
+        const card = CardData.CreateCrad(
           thumbnail,
           title,
           short_description.split(" ", 8).join(" "),

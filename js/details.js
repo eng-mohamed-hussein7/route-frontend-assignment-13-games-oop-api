@@ -9,15 +9,15 @@ const navbarSection = document.querySelector(".my-navbar");
 
 //!============================== this class design for consume API (Game Details) ==============================!//
 export class GameDetails {
-  constructor() {
-    cardDetails.classList.remove("d-none");
-    mainSection.classList.add("d-none");
-    navbarSection.classList.add("d-none");
-  }
   getGameDetails = async (gameId) => {
     try {
       const loading = document.querySelector(".loading");
       loading.classList.remove("d-none");
+      
+      cardDetails.classList.remove("d-none");
+      mainSection.classList.add("d-none");
+      navbarSection.classList.add("d-none");
+      
       const options = {
         method: "GET",
         headers: {
@@ -33,8 +33,7 @@ export class GameDetails {
       );
       const result = await response.json();
 
-      const detailsGame = new DetailsGame();
-      detailsGame.setDataInDetailsPage(
+      DetailsGame.setDataInDetailsPage(
         result.thumbnail,
         result.title,
         result.genre,
